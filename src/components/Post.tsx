@@ -22,7 +22,7 @@ export async function Post() {
         <>
             {trendingGifs.map(gif => {
                 return (
-                    <div key={gif.id} className="w-1/3 h-[600px] flex flex-col justify-start items-center bg-zinc-700 border rounded-md p-5 mb-10">
+                    <div key={gif.id} className="w-11/12 md:w-1/3 h-[450px] md:h-[600px] flex flex-col justify-start items-center bg-zinc-700 border rounded-md p-5 mb-10">
 
                         <div className="w-full flex justify-start items-center py-2">
 
@@ -31,7 +31,7 @@ export async function Post() {
                                 src={gif.user ? gif.user.avatar_url : ''}
                                 width={30}
                                 height={30}
-                                alt="Avatar"
+                                alt={gif.username}
                             />
                             <a
                                 href={gif.user ? gif.user.profile_url : '/'}
@@ -44,21 +44,21 @@ export async function Post() {
 
 
                         <Image
-                            className="w-full h-[450px] bg-red-50 rounded-md"
+                            className="w-full h-72 md:h-[450px] bg-red-50 rounded-md"
                             src={gif.images.original.url}
                             width={200}
                             height={200}
-                            alt="Gif"
+                            alt={gif.title}
                         />
 
-                        <div className="w-full flex justify-start items-center py-2">
+                        <div className="w-full flex flex-col md:flex-row justify-start items-start md:items-center py-2">
                             <a
                                 href={gif.user ? gif.user.profile_url : '/'}
                                 rel="external"
                                 target="_blank"
                                 className="text-base font-medium">{gif.username}:
                             </a>
-                            <p className="text-sm font-medium ml-2 truncate">{gif.title}</p>
+                            <p className="text-sm font-medium md:ml-2 md:truncate">{gif.title}</p>
                         </div>
                     </div>
 
