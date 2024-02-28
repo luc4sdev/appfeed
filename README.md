@@ -34,7 +34,7 @@ yarn install
 ```
 
 ## 🚀 Rodando o projeto
-1° - Deve-se criar um arquivo com o nome ```.env.local``` com as seguntes variáveis de ambiente:
+1° - Deve-se criar um arquivo com o nome ```.env.local``` com as seguintes variáveis de ambiente:
 ```
 NEXT_PUBLIC_API_BASE_URL="https://api.giphy.com"
 NEXT_PUBLIC_API_KEY="API do Giphy"
@@ -67,7 +67,7 @@ yarn dev
 
 ## 🧪 Executar os testes
 
-1° - Deve-se criar um arquivo com o nome ```.env.test``` com as seguntes variáveis de ambiente:
+1° - Deve-se criar um arquivo com o nome ```.env.test``` com as seguintes variáveis de ambiente:
 ```
 NEXT_PUBLIC_API_BASE_URL="https://api.giphy.com"
 NEXT_PUBLIC_API_KEY="API do Giphy"
