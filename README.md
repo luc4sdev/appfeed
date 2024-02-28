@@ -3,7 +3,7 @@
 
 ## 💻 Sobre 
 
-O objetivo do projeto é a implementação de uma tela de feed com dados da Giphy API, a aplicação foi desenvolvida em ReactJS e NextJS. Também foi realizados testes unitários com Jest e React Testing Library.
+O objetivo do projeto é a implementação de uma tela de feed com dados da Giphy API, retornando os gifs top trendings, também é possível visualizar uma tabela de emojis retornados da API. A aplicação foi desenvolvida em ReactJS e NextJS utilizando a biblioteca Kendo UI. Também foi realizados testes unitários com Jest e React Testing Library.
 
 --- 
 

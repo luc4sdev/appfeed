@@ -21,7 +21,7 @@ export function GridEmojis({ emojis }: GridEmojisProps) {
     const [filter, setFilter] = useState(initialFilter);
 
     const { visible, toggleModalVisibility } = useModalContext();
-    
+
 
     const CustomImageCell = (props: any) => {
         return (
@@ -34,11 +34,12 @@ export function GridEmojis({ emojis }: GridEmojisProps) {
 
     if (emojis && visible) {
         return (
-            <Dialog title={"Emojis list"} onClose={toggleModalVisibility}>
+            <Dialog
+                title={"Emojis list"} onClose={toggleModalVisibility}>
                 <Grid
                     style={{
                         height: '420px',
-                    }} 
+                    }}
                     data={filterBy(emojis, filter)}
                     resizable={true}
                     filterable={true}

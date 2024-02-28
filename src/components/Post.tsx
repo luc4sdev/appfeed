@@ -22,7 +22,7 @@ export async function Post() {
         <>
             {trendingGifs.map(gif => {
                 return (
-                    <div key={gif.id} className="w-11/12 md:w-1/3 h-[450px] md:h-[600px] flex flex-col justify-start items-center bg-zinc-700 border rounded-md p-5 mb-10">
+                    <div key={gif.id} className="w-11/12 md:w-1/3 h-[450px] md:h-[600px] flex flex-col justify-start items-center bg-zinc-900 rounded-md  p-5 mb-10">
 
                         <div className="w-full flex justify-start items-center py-2">
                             <a
@@ -55,7 +55,7 @@ export async function Post() {
                             className="w-full"
                             >
                             <Image
-                                className="w-full h-72 md:h-[450px] bg-red-50 rounded-md"
+                                className="w-full h-72 md:h-[450px] bg-red-50 rounded-sm border-2 border-zinc-800"
                                 src={gif.images.original.url}
                                 width={200}
                                 height={200}
