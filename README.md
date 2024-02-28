@@ -9,7 +9,7 @@ O objetivo do projeto é a implementação de uma tela de feed com dados da Giph
 
 ## 🚀 Link do projeto hospedado na Vercel (clique para entrar)
 
-<h2>Link: <a href="/" target="_blank" rel="external">Acesse aqui</a></h2>
+<h2>Link: <a href="https://appfeed.vercel.app/" target="_blank" rel="external">Acesse aqui</a></h2>
 
 
 ## 💻 Pré-requisitos
