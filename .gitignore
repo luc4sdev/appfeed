@@ -29,7 +29,7 @@ yarn-error.log*
 .env*.local
 
 # test env files
-.env*.test
+.env.test
 
 # vercel
 .vercel
