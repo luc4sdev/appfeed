@@ -41,6 +41,19 @@ NEXT_PUBLIC_API_KEY="API do Giphy"
 NEXT_PUBLIC_KENDO_UI_LICENSE="Licença do Kendo UI"
 ```
 
+2° - execute o comando a seguir para ativar a licença do Kendo UI: 
+
+npm:
+```
+npm install @progress/kendo-licensing
+```
+
+yarn:
+ ```
+ yarn add @progress/kendo-licensing
+ ```
+
+
 Para rodar o projeto, execute no terminal:
 
 npm:
