@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 
-export default function Loading() {
+export default function LoadingHome() {
     return (
         <div className="mx-auto flex flex-col items-center min-h-screen w-full max-w-[1600px] gap-5 p-8">
             <Header />
