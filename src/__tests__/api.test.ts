@@ -1,4 +1,4 @@
-import { getTrendingGifs } from '@/components/Post';
+import { getTrendingGifs } from '@/components/Posts';
 import { getEmojis } from '@/components/Header';
 import { env } from "@/env";
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import Home from '@/app/page';
-import { getTrendingGifs } from '@/components/Post';
+import { getTrendingGifs } from '@/components/Posts';
 import { getEmojis } from '@/components/Header';
 
-jest.mock('../components/Post', () => {
+jest.mock('../components/Posts', () => {
   return {
     __esModule: true,
-    Post: jest.fn(),
+    Posts: jest.fn(),
     getTrendingGifs: jest.fn()
   };
 });
