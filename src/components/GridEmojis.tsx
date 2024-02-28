@@ -4,6 +4,8 @@ import { Grid, GridColumn, GridFilterChangeEvent } from '@progress/kendo-react-g
 import { filterBy, CompositeFilterDescriptor } from '@progress/kendo-data-query';
 import { Emoji } from '@/data/types/emoji';
 import Image from 'next/image';
+import { Dialog } from '@progress/kendo-react-dialogs';
+import { useModalContext } from '@/contexts/ModalContext';
 
 const initialFilter: CompositeFilterDescriptor = {
     logic: "and",
@@ -16,9 +18,10 @@ interface GridEmojisProps {
 
 export function GridEmojis({ emojis }: GridEmojisProps) {
 
-
     const [filter, setFilter] = useState(initialFilter);
 
+    const { visible, toggleModalVisibility } = useModalContext();
+    
 
     const CustomImageCell = (props: any) => {
         return (
@@ -28,12 +31,15 @@ export function GridEmojis({ emojis }: GridEmojisProps) {
         );
     };
 
-    if (emojis) {
+
+    if (emojis && visible) {
         return (
+            <Dialog title={"Emojis list"} onClose={toggleModalVisibility}>
                 <Grid
                     style={{
                         height: '420px',
-                    }} data={filterBy(emojis, filter)}
+                    }} 
+                    data={filterBy(emojis, filter)}
                     resizable={true}
                     filterable={true}
                     filter={filter}
@@ -44,7 +50,7 @@ export function GridEmojis({ emojis }: GridEmojisProps) {
                     <GridColumn field="rating" title='Rating' />
                     <GridColumn title="Image" cell={CustomImageCell} filterable={false} />
                 </Grid>
-
+            </Dialog>
         )
     }
 };

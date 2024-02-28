@@ -2,7 +2,7 @@ import { api } from "@/data/api"
 import { Gif } from "@/data/types/gif"
 import Image from "next/image"
 
-async function getTrendingGifs(): Promise<Gif[]> {
+export async function getTrendingGifs(): Promise<Gif[]> {
     const response = await api('/v1/gifs/trending', {
         next: {
             revalidate: 60 * 60, // 1 hour
