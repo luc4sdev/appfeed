@@ -47,12 +47,12 @@ NEXT_PUBLIC_KENDO_UI_LICENSE="Kendo UI license"
 
 npm:
 ```
-npm install @progress/kendo-licensing
+npx kendo-ui-license activate
 ```
 
 yarn:
  ```
- yarn add @progress/kendo-licensing
+yarn run kendo-ui-license activate
  ```
 
 
