@@ -1,27 +1,27 @@
 
 ---
 
-## 💻 Sobre 
+## 💻 About
 
-O objetivo do projeto é a implementação de uma tela de feed com dados da Giphy API, retornando os gifs top trendings, também é possível visualizar uma tabela de emojis retornados da API. A aplicação foi desenvolvida em ReactJS e NextJS utilizando a biblioteca Kendo UI. Também foi realizados testes unitários com Jest e React Testing Library.
+The project's objective is to implement a feed screen with data from the Giphy API, returning the top trending gifs. It is also possible to view a table of emojis returned from the API. The application was developed using ReactJS and NextJS using the Kendo UI library. Unit tests were also performed with Jest and React Testing Library.
 
 --- 
 
-## 🚀 Link do projeto hospedado na Vercel (clique para entrar)
+## 🚀 Project hosted on Vercel (click to access)
 
-<h2>Link: <a href="https://appfeed.vercel.app/" target="_blank" rel="external">Acesse aqui</a></h2>
-
-
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-* Você tem uma máquina `<Windows / Linux / Mac>`
-* Você instalou a versão mais recente do `NodeJS`
+<h2>Link: <a href="https://appfeed.vercel.app/" target="_blank" rel="external">Access here</a></h2>
 
 
-## ⚙️ Instalando
+## 💻 Prerequisites
 
-Para instalar execute no terminal:
+Before you begin, ensure you have met the following requirements:
+* You have a `<Windows / Linux / Mac>` machine
+* You have installed the latest version of `NodeJS`
+
+
+## ⚙️ Installing
+
+To install, run the following command in the terminal:
 
 npm:
 ```
@@ -33,15 +33,17 @@ yarn:
 yarn install
 ```
 
-## 🚀 Rodando o projeto
-1° - Deve-se criar um arquivo com o nome ```.env.local``` com as seguintes variáveis de ambiente:
+
+## 🚀 Running the project
+
+1° - You must create a file named ```.env.local``` with the following environment variables:
 ```
 NEXT_PUBLIC_API_BASE_URL="https://api.giphy.com"
 NEXT_PUBLIC_API_KEY="API do Giphy"
-NEXT_PUBLIC_KENDO_UI_LICENSE="Licença do Kendo UI"
+NEXT_PUBLIC_KENDO_UI_LICENSE="Kendo UI license"
 ```
 
-2° - Crie o ```arquivo kendo-ui-license.txt``` na raíz do projeto com a key da licença e execute o comando a seguir para ativar a licença do Kendo UI: 
+2° - Create the file ```kendo-ui-license.txt``` file in the project root with the license key and run the following command to activate the Kendo UI license:
 
 npm:
 ```
@@ -54,7 +56,7 @@ yarn:
  ```
 
 
-Para rodar o projeto, execute no terminal:
+To run the project, execute the following command in the terminal:
 
 npm:
 ```
@@ -65,16 +67,16 @@ yarn:
 yarn dev
 ```
 
-## 🧪 Executar os testes
+## 🧪 Running tests
 
-1° - Deve-se criar um arquivo com o nome ```.env.test``` com as seguintes variáveis de ambiente:
+1° - You must create a file named ```.env.test``` with the following environment variables:
 ```
 NEXT_PUBLIC_API_BASE_URL="https://api.giphy.com"
 NEXT_PUBLIC_API_KEY="API do Giphy"
 NEXT_PUBLIC_KENDO_UI_LICENSE="Licença do Kendo UI"
 ```
 
-Para rodar os testes, execute no terminal:
+To run tests, execute the following command in the terminal:
 
 npm:
 ```
@@ -85,9 +87,9 @@ yarn:
 yarn test
 ```
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Technologies used
 
-O projeto está desenvolvido utilizando as seguintes tecnologias:
+The project is developed using the following technologies:
 
 - ReactJS <img width="20px" height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
 - NextJS <img width="20px" height="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
